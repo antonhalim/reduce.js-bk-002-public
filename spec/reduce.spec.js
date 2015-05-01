@@ -2,11 +2,6 @@
 
 describe('reduce', function() {
 
-  var reduce;
-  beforeEach(function() {
-    reduce = require('../lib/reduce');
-  });
-
   it('can sum numbers', function() {
     expect(reduce([1,2,3], 1, function(item, memo) { return item + memo})).toEqual(7);
   });
